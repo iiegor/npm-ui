@@ -1,0 +1,82 @@
+:root {
+  --header-bg-color: rgba(0,0,0,0.08);
+}
+
+:host {
+  background-color: var(--header-bg-color);
+  padding: 14px 12px 10px;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  text-align: center;
+}
+
+:host > * {
+  flex: 0 0 auto;
+}
+
+#npm-logo {
+  order: 1;
+}
+
+#npm-logo img {
+  vertical-align: middle;
+  width: 125px;
+  height: 49px;
+}
+
+#npm-search {
+  position: relative;
+  height: 40px;
+  padding-left: 7px;
+  margin: 0;
+  margin-left: 1em;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 2px;
+  background: #fff;
+  text-align: left;
+  flex: 1 0 auto;
+  order: 2;
+}
+
+#npm-search input[type="search"] {
+  font-family: Roboto;
+  font-weight: 300;
+  background: none;
+  border: 0;
+  font-size: 18px;
+  height: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0 54px 0 0;
+  width: 100%;
+  color: rgba(0,0,0,0.8);
+  border-radius: 4px;
+}
+
+#npm-search input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 46px;
+  border: 0;
+  text-indent: -9999em;
+  outline: 0;
+  border-left: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0 2px 2px 0;
+  background: url("https://www.npmjs.com/static/images/ico-search.svg") no-repeat 50% 50%;
+  background-size: 16px 16px;
+  padding: 0 25px;
+  color: #fff;
+}
+
+#npm-search input[type="submit"]:hover {
+  width: 46px;
+  height: 40px;
+  border: 1px solid #ae2e2d;
+  border-bottom: none;
+  background: #cb3837 url("https://www.npmjs.com/static/images/ico-search-hover.svg") no-repeat 50% 50%;
+  background-size: 16px 16px;
+}

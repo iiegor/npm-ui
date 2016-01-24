@@ -1,0 +1,20 @@
+<link rel="import" href="chrome://resources/polymer/v1_0/polymer/polymer.html">
+
+<dom-module id="app-header">
+  <link rel="import" type="css" href="app-header.css">
+
+  <template>
+    <template is="dom-if" if="{{logo}}">
+      <div id="npm-logo">
+        <span><img src="../../resources/npmi-logo.svg" alt="npmi logo"></span>
+      </div>
+    </template>
+
+    <div id="npm-search">
+      <input type="search" id="search-input" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" autocomplete="off" on-keydown="search">
+      <input type="submit" id="search-submit" on-click="search">
+    </div>
+  </template>
+</dom-module>
+
+<script src="app-header.js"></script>

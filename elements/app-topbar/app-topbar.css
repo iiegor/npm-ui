@@ -1,0 +1,53 @@
+:root {
+  --iron-icon-fill-color: rgba(255,255,255,0.8);
+}
+
+:host {
+  display: flex;
+  border-bottom: 0;
+  height: 25px;
+  align-items: center;
+  background-color: #cb3837;
+  border-bottom: 1px solid #b83130;
+
+  -webkit-app-region: drag;
+}
+
+iron-icon {
+  -webkit-app-region: no-drag;
+  margin: 0;
+  padding: 0;
+  color: var(--iron-icon-fill-color);
+  height: 19px;
+}
+
+iron-icon:not(:first-of-type) {
+  margin-left: -2px;
+}
+
+iron-icon:active {
+  color: #fff;
+}
+
+nav {
+  flex: 1 auto;
+  padding: 0 12px;
+}
+
+nav .item {
+  float: right;
+  padding: 0;
+  text-transform: lowercase;
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  color: rgba(255,255,255,0.8);
+  transition: all 0.1s;
+
+  -webkit-app-region: no-drag;
+}
+
+nav .item:hover {
+  color: #fff;
+  text-decoration: none;
+}

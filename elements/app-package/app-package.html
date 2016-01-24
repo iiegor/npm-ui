@@ -1,0 +1,36 @@
+<link rel="import" href="chrome://resources/polymer/v1_0/polymer/polymer.html">
+
+<dom-module id="app-package">
+  <link rel="import" type="css" href="app-package.css">
+
+  <template>
+    <div class="wrapper with-logo">
+      <span class="logo" href="/package/browserify">
+        <img src="https://d21ii91i3y6o6h.cloudfront.net/gallery_images/from_proof/1647/small/1405586570/browserify-2-hexagon-sticker.png" alt="browserify logo">
+      </span>
+
+      <div class="details">
+        <h3>
+          <span class="name" href="/package/browserify">{{name}}</span>
+
+          <template is="dom-if" if="{{!installed}}">
+            <button data-action="install">Install</button>
+          </template>
+
+          <template is="dom-if" if="{{installed}}">
+            <button style="background-color: grey">Already installed</button>
+          </template>
+        </h3>
+
+        <p class="description">browser-side require() the node way</p>
+
+        <p class="author quiet">
+          <span class="version" href="/package/browserify">10.2.6</span> published <span class="date">7 months ago</span>
+          by <span href="/~substack">substack</span>
+        </p>
+      </div>
+    </div>
+  </template>
+</dom-module>
+
+<script src="app-package.js"></script>

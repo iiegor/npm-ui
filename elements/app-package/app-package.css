@@ -1,0 +1,83 @@
+.wrapper.with-logo {
+  padding-left: 60px;
+}
+
+.logo {
+  margin-left: -60px;
+  margin-bottom: -50px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.logo img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.details h3 {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+
+  margin: 4px 0px 2px;
+}
+
+.with-logo .details p {
+  padding-left: 0;
+}
+
+.quiet {
+  font-size: 14px;
+  color: rgba(0,0,0,0.6);
+}
+
+p {
+  font-size: 15px;
+  margin: 0;
+  max-width: 100%;
+  color: rgba(0,0,0,0.6);
+  padding-left: 23px;
+}
+
+.name {
+  color: rgba(0,0,0,0.8);
+  font-size: 17px;
+  line-height: 23px;
+  overflow: visible;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.version,
+.date {
+  font-weight: bold
+}
+
+button {
+  border: 0;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  /* margin: 0 0 4px; */
+  height: 18px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  /* font-size: 18px; */
+  background: #cb3837;
+  cursor: pointer;
+  text-decoration: none !important;
+  -webkit-appearance: none;
+  clear: both;
+}
+
+button:hover {
+  background: rgba(0,0,0,0.8);
+}

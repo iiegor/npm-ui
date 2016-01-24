@@ -1,0 +1,20 @@
+<link rel="import" href="chrome://resources/polymer/v1_0/polymer/polymer.html">
+<link rel="import" href="../app-package/app-package.html">
+
+<dom-module id="app-content">
+  <link rel="import" type="css" href="app-content.css">
+
+  <template>
+    <ul class="packages-list">
+      <template is="dom-repeat" items="{{packages}}" as="pkg">
+        <li>
+          <app-package name="{{pkg.name}}" version="{{pkg.version}}" installed="{{pkg.installed}}"></app-package>
+        </li>
+      </template>
+    </ul>
+
+    <content></content>
+  </template>
+</dom-module>
+
+<script src="app-content.js"></script>

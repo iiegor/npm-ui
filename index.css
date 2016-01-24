@@ -1,0 +1,48 @@
+/**
+ * Globals
+ */
+html,
+body {
+  cursor: default;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  
+  font-family: 'Roboto', 'Droid Sans', arial, sans-serif;
+  font-size: 15px;
+  direction: ltr;
+  overflow: hidden;
+
+  -webkit-user-select: none;
+}
+
+/* NOTE: Maybe there is a better way? */
+body.blur app-topbar {
+  background-color: #E9E9E9;
+  border-color: #d3d3d3;
+}
+
+body.blur app-topbar::shadow nav .item {
+  color: rgba(0, 0, 0, .3);
+  font-weight: 600;
+}
+
+body.blur app-topbar::shadow iron-icon {
+  color: #BABABA;
+}
+
+body.win32 app-topbar {
+  flex-direction: row-reverse;
+}
+
+body.win32 app-topbar::shadow nav .item {
+  float: left;
+}
+
+body.win32 app-topbar::shadow iron-icon:not(:first-of-type) {
+  margin-left: 0;
+  margin-right: -2px;
+}

@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.packages-list {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 12px;
+  overflow-y: visible;
+}
