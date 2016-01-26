@@ -9,3 +9,7 @@
   padding: 12px;
   overflow-y: visible;
 }
+
+.packages-list li {
+  margin-bottom: 12px;
+}
